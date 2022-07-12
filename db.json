@@ -1,0 +1,46 @@
+{
+    "galaxies": [
+      {
+        "id": 1,
+        "name": "Milky Way Galaxy",
+        "image": "https://exoplanets.nasa.gov/internal_resources/698",
+        "distance": "Look up"
+        
+      },
+      {
+        "id": 2,
+        "name": "Canis Major Dwarf",
+        "image": "https://i.pinimg.com/474x/48/d8/60/48d8600c9b04c8dc31fb6cc90558ff9c.jpg",
+        "distance": "0.025 Million Light Years"
+      },
+      {
+        "id": 3,
+        "name": "Virgo Stellar Stream",
+        "image": "http://www.theworldaloha.com/uploads/3/7/3/5/3735144/jon-lomberg-star-stream.jpg",
+        "distance": "0.030 Million Light Years"
+      },
+      {
+        "id": 4,
+        "name": "Sagittarius Dwarf Eliptical Galaxy",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d3/The_Sagittarius_dwarf_galaxy_in_Gaia%27s_all-sky_view_ESA399651.jpg",
+        "distance": "0.081 Million Light Years"
+        
+      },
+      {
+        "id": 5,
+        "name": "Large Magellanic Cloud",
+        "image": "http://cdn.eso.org/images/screen/eso1914a.jpg",
+        "distance":"0.163 Million Light Years"
+    
+      },
+      {
+        "id": 6,
+        "name": "Small Magellanic Cloud",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Small_Magellanic_Cloud_%28Digitized_Sky_Survey_2%29.jpg/1200px-Small_Magellanic_Cloud_%28Digitized_Sky_Survey_2%29.jpg",
+        "distance": "0.197 Million Light Years"
+        
+      }
+      
+  
+    ]
+  }
