@@ -1,19 +1,29 @@
 import NavBar from './NavBar'
 import GalaxyContainer from './GalaxyContainer'
 import React, {useEffect, useState} from 'react'
-import {Switch, Route} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
+import Home from './Home'
+import About from './About'
 
 function App(){
+
+    function fetchAPI(){
+        fetch('http://localhost:3001/galaxies')
+        .then(res=>res.json())
+        .then(galaxyData => console.log(galaxyData))
+    }
+
+    fetchAPI()
     const [page, setPage]= useState('/')
     return (
         <div>
             <NavBar onChangePage={setPage} />
-            <Switch>
+            <Routes>
                 <Route path="/about">
                     <About />
                 </Route>
                 <Route path="/projects">
-                    <ProjectList />
+                    {/* <ProjectList /> */}
                 </Route>
                 <Route exact path="/">
                     <Home />
@@ -21,7 +31,7 @@ function App(){
                 <Route path="*">
                     <h1>404 not found</h1>
                 </Route>
-            </Switch>
+            </Routes>
         </div>
     );
 }
