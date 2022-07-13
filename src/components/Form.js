@@ -12,6 +12,7 @@ const [values, setValues] = useState({
 
 function handleSubmit(event){
     event.preventDefault()
+    event.target.reset()
     setGalaxies(galaxies=>[...galaxies,values])
     setSides(sides=>sides+1)
     fetch('http://localhost:3000/galaxies',{

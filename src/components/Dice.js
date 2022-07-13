@@ -1,6 +1,7 @@
 import {useState} from 'react'
 function Dice({number, setNumber, setDealerNumber, sides, winLoseOrDraw}){
-    console.log(sides)
+    const [count, setCount]= useState(0)
+    
     let dice = {
         sides: sides,
         roll: function () {
@@ -12,11 +13,17 @@ function Dice({number, setNumber, setDealerNumber, sides, winLoseOrDraw}){
       }
       
       //Prints dice roll to the page
-      
+
       function roll() {
+        
+        
         let result = dice.roll();
         //printNumber(result);
+        if(count>0){
         winLoseOrDraw()
+        }
+        setCount(count+1)
+        
         setNumber(result)
       };
 return(

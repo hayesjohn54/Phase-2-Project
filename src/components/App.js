@@ -25,9 +25,11 @@ function App(){
     const dealerObj= galaxies.filter(galaxy=>(galaxy.id===dealerNumber))
 
     function winLoseOrDraw(){
-        if(number>dealerNumber){
+        console.log(playerObj[0].powerLevel)
+        console.log(dealerObj[0].powerLevel)
+        if(playerObj[0].powerLevel>dealerObj[0].powerLevel){
             setPlayerPoints(playerPoints=>playerPoints+1)
-        }else if(number<dealerNumber){
+         }else if(playerObj[0].powerLevel<dealerObj[0].powerLevel){
             setDealerPoints(dealerPoints=>dealerPoints+1)
         }else(setDraws(draws=>draws+1))
     }
