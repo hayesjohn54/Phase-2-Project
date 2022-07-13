@@ -1,10 +1,12 @@
 import {useState} from 'react'
-function Dice(){
-    const [number, setNumber]= useState()
+function Dice({number, setNumber, setDealerNumber}){
+    
     let dice = {
-        sides: 12,
+        sides: 6,
         roll: function () {
           let randomNumber = Math.floor(Math.random() * this.sides) + 1;
+          let dealer =Math.floor(Math.random() * this.sides) + 1;
+          setDealerNumber(dealer)
           return randomNumber;
         }
       }
@@ -17,7 +19,7 @@ function Dice(){
         setNumber(result)
       };
 return(
-    <div>
+    <div id="dice">
           <p id="placeholder">{number}
   
   </p>

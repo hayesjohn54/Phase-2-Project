@@ -59,7 +59,7 @@ img {
   }
   
   .cards__item {
-    display: inline-block;
+    float:left; display:inline; width: 49%;
     padding: 1rem;
     width: 25%;
     margin: 0 0 0 53px ;
@@ -136,6 +136,10 @@ img {
   
 
   /*dice roller*/
+#dice{
+  display:inline-block; 
+  margin: 0 0 0 42%;
+}
 button {
   font-family: Helvetica, Arial, sans-serif;
   text-align: center;
@@ -147,7 +151,7 @@ button {
   text-transform: uppercase;
   width: 200px;
   cursor: pointer;
-  margin: 0 0 0 42%;
+  margin: 0 0 0 0;
 }
 #placeholder {
   font-family: Helvetica, Arial, sans-serif;
@@ -160,3 +164,98 @@ button {
   border-radius: 10px;  
   font-size:80px;
 }
+
+
+.ards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+.ards__item {
+  float:right; display:inline; width: 4%;
+  padding: 1rem;
+  width: 25%;
+  margin: 0 0 0 0 ;
+}
+
+.ard {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.ard__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.ard__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
+  width: 500;
+  height: 500;
+}
+
+.ard__image:hover{
+  filter: contrast(100%);
+}
+
+
+.ard__title {
+  color: #696969;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.ard__text, .card__detail p {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.ard__detail {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.ard__detail p {
+  text-align: center;
+}
+
+.ard__detail button{
+  text-align: center;
+}
+
+@media(max-width: 700px){
+  .ards__item{
+    width: 50%;
+  }
+}
+
+.dards__item {
+  float:left; display:inline; width: 49%;
+  padding: 1rem;
+  width: 25%;
+  margin: -26% 0 0 0 ;
+}
+
+
+

@@ -1,9 +1,8 @@
-function DealerCard({galaxy}){
+function PlayerCard({galaxy}){
     console.log(galaxy)
     return(
         <div id="playerCard">
-
-        <li className="dards__item">
+        <li className="ards__item">
         <div className="ard">
           <img
             style={{width:500, height:250}}
@@ -17,7 +16,7 @@ function DealerCard({galaxy}){
             <div className="ard__detail">
               <p>{galaxy.distance}</p>
             </div>
-            <h1 id="headerForCard">Dealer Card</h1>
+            <h1 id="headerPlayerForCard">Your Card</h1>
           </div>
         </div>
       </li>
@@ -26,4 +25,4 @@ function DealerCard({galaxy}){
     
 }
 
-export default DealerCard;
+export default PlayerCard;
