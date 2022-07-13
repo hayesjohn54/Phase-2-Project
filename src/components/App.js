@@ -12,7 +12,7 @@ function App(){
     const [dealerNumber, setDealerNumber]=useState()
 
     useEffect(()=>{
-      fetch('http://localhost:8000/galaxies')
+      fetch('http://localhost:3000/galaxies')
         .then(res=>res.json())
         .then(galaxyData => setGalaxies(galaxyData))
     },[])

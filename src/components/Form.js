@@ -5,14 +5,30 @@ function Form(){
 const [values, setValues] = useState({
     name:"",
     image:"",
-    description:""
+    distance:""
 })
 
 function handleSubmit(event){
     event.preventDefault()
-    
+    fetch('http://localhost:3000/galaxies',{
+    method: 'POST',
+    headers: {
+    'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(values)
+    })
+    .then(data => {
+        if (!data.ok) {
+          throw Error(data.status);
+         }
+         return data.json();
+        }).then(update => {
+        console.log(update);
+        }).catch(e => {
+        console.log(e);
+        })}
 
-}
+console.log(values)
 
 
 const handleName = (event) => {
@@ -22,8 +38,8 @@ const handleImage = (event) => {
     setValues({...values, image: event.target.value})
 }
 
-const handleDescription = (event) => {
-    setValues({...values, description:event.target.value})
+const handleDistance = (event) => {
+    setValues({...values, distance:event.target.value})
 }
 return(
     <div className="form-container">
@@ -47,11 +63,11 @@ return(
             </div>
             <div className="descriptionBox">
             <input 
-                onChange={handleDescription}
-                value={values.description}
-                className="form-field"
-                placeholder="Description"
-                name="galaxyDescription"/>
+                onChange={handleDistance}
+                value={values.distance}
+                className="distance"
+                placeholder="Distance"
+                name="galaxyDistance"/>
             </div>
             <input type="submit"/>
         </form>
