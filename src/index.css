@@ -32,6 +32,15 @@ body{
     color: #fff;
   }
 
+  .galaxyHeader {
+    font-size: 2em;
+    text-align: center;
+  }
+  .galaxy-form {
+    padding: 60px 30%;
+    text-align: center;
+  }
+
 img {
     
     max-width: 100%;

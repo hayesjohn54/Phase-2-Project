@@ -4,6 +4,7 @@ import React, {useEffect, useState} from 'react';
 import { Routes, Route } from "react-router-dom";
 import Home from './Home';
 import About from './About';
+import Form from './Form';
 
 function App(){
     const [galaxies, setGalaxies]= useState([])
@@ -26,6 +27,7 @@ function App(){
                     <Route path="/about" element={<About />}/>
                     <Route path="/galaxies" element={<GalaxyContainer galaxies={galaxies} />}/>
                     <Route path='/' element={<Home  dealerObj={dealerObj} setDealerNumber={setDealerNumber} playerObj={playerObj} number={number} setNumber={setNumber}/>} />
+                    <Route path="/form" element={<Form/>}/>
                 </Routes>
             
         </div>
