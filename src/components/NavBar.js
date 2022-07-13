@@ -4,9 +4,10 @@ function NavBar() {
     
     return (
         <nav className="nav">
-            <a><NavLink exact="true" to="/">Home</NavLink></a>
+            <h1 className="nav-title">SPACEY</h1>
+            <a><NavLink to="/galaxies" >Galaxies</NavLink></a>
             <a><NavLink to="/about">About</NavLink></a>
-            <a><NavLink to="/galaxies">Galaxies</NavLink></a>
+            <a><NavLink exact="true" to="/">Home</NavLink></a>
         </nav>
     );
 }

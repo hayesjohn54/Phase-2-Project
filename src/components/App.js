@@ -9,7 +9,7 @@ function App(){
     const [galaxies, setGalaxies]= useState([])
 
     useEffect(()=>{
-      fetch('http://localhost:3000/galaxies')
+      fetch('http://localhost:8000/galaxies')
         .then(res=>res.json())
         .then(galaxyData => setGalaxies(galaxyData))
     },[])

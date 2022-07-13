@@ -4,6 +4,7 @@ function GalaxyCard({galaxy}){
         <li className="cards__item">
         <div className="card">
           <img
+            style={{width:500, height:250}}
             src={galaxy.image}
             alt={galaxy.name}
             className="card__image"
