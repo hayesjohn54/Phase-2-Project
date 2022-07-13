@@ -5,33 +5,31 @@
       "name": "Milky Way Galaxy",
       "image": "https://exoplanets.nasa.gov/internal_resources/698",
       "distance": "Distance: Look up",
-      "power-level": "9001",
+      "powerLevel": "9001",
       "contents": "10,000,000 White Dwarfs, 1,000,000,000 Neutron Stars, 100,000,000 Black Holes and you"
-      
     },
     {
       "id": 2,
       "name": "Canis Major Dwarf",
       "image": "https://i.pinimg.com/474x/48/d8/60/48d8600c9b04c8dc31fb6cc90558ff9c.jpg",
       "distance": "Distance: 0.025 Million Light Years from Earth",
-      "power-level": "8999",
+      "powerLevel": "8999",
       "contents": "1,000,000,000 Stars(wants to be the Milky Way so bad)"
-
     },
     {
       "id": 3,
       "name": "Virgo Stellar Stream",
       "image": "http://www.theworldaloha.com/uploads/3/7/3/5/3735144/jon-lomberg-star-stream.jpg",
       "distance": "Distance: 0.030 Million Light Years from Earth",
-      "power-level": "2",
-      "contents":"In the process of being 'cannibalised' by the Milky Way, so sad too bad"
+      "powerLevel": "2",
+      "contents": "In the process of being 'cannibalised' by the Milky Way, so sad too bad"
     },
     {
       "id": 4,
       "name": "Sagittarius Dwarf Eliptical Galaxy",
       "image": "https://upload.wikimedia.org/wikipedia/commons/d/d3/The_Sagittarius_dwarf_galaxy_in_Gaia%27s_all-sky_view_ESA399651.jpg",
       "distance": "Distance: 0.081 Million Light Years from Earth",
-      "power-level": "2",
+      "powerLevel": "2",
       "contents": "9 Global Clusters(large star clusters)"
     },
     {
@@ -39,7 +37,7 @@
       "name": "Large Magellanic Cloud",
       "image": "http://cdn.eso.org/images/screen/eso1914a.jpg",
       "distance": "Distance: 0.163 Million Light Years from Earth",
-      "power-level": "420",
+      "powerLevel": "420",
       "contents": "400 Planetary Nebulae(gas ejected from late stage Red Giant Stars), 60 Globular Clusters and 700 Open Clusters"
     },
     {
@@ -47,9 +45,16 @@
       "name": "Small Magellanic Cloud",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Small_Magellanic_Cloud_%28Digitized_Sky_Survey_2%29.jpg/1200px-Small_Magellanic_Cloud_%28Digitized_Sky_Survey_2%29.jpg",
       "distance": "Distance: 0.197 Million Light Years from Earth",
-      "power-level": "69",
+      "powerLevel": "69",
       "contents": "Several hundred million stars and approximately 7 billion solar masses"
+    },
+    {
+      "name": "sdljssff",
+      "image": "https://www.nasa.gov/sites/default/files/thumbnails/image/hubble_ic342_mosaicnew_acscrop2_flat_cont4_finalcrop3.jpg",
+      "distance": "sldfkjalsjfd",
+      "contents": "lksjfdlkaf",
+      "powerLevel": "1001000",
+      "id": 7
     }
-  
   ]
 }

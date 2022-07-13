@@ -1,8 +1,8 @@
 import {useState} from 'react'
-function Dice({number, setNumber, setDealerNumber}){
-    
+function Dice({number, setNumber, setDealerNumber, sides, winLoseOrDraw}){
+    console.log(sides)
     let dice = {
-        sides: 6,
+        sides: sides,
         roll: function () {
           let randomNumber = Math.floor(Math.random() * this.sides) + 1;
           let dealer =Math.floor(Math.random() * this.sides) + 1;
@@ -16,6 +16,7 @@ function Dice({number, setNumber, setDealerNumber}){
       function roll() {
         let result = dice.roll();
         //printNumber(result);
+        winLoseOrDraw()
         setNumber(result)
       };
 return(

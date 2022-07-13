@@ -1,5 +1,5 @@
 function PlayerCard({galaxy}){
-    console.log(galaxy)
+    
     return(
         <div id="playerCard">
         <li className="ards__item">
@@ -12,7 +12,8 @@ function PlayerCard({galaxy}){
           />
           <div className="ard__content">
             <div className="ard__title">{galaxy.name}</div>
-            <p className="ard__text">{galaxy.name}</p>
+            <p className="ard__text">{galaxy.contents}</p>
+            <p>{galaxy.powerLevel}</p>
             <div className="ard__detail">
               <p>{galaxy.distance}</p>
             </div>

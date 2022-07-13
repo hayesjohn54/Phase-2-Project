@@ -1,15 +1,19 @@
 import {useState, useEffect} from "react"
 
 
-function Form(){
+function Form({setSides, sides, setGalaxies}){
 const [values, setValues] = useState({
     name:"",
     image:"",
-    distance:""
+    distance:"",
+    contents:"",
+    powerLevel: ""
 })
 
 function handleSubmit(event){
     event.preventDefault()
+    setGalaxies(galaxies=>[...galaxies,values])
+    setSides(sides=>sides+1)
     fetch('http://localhost:3000/galaxies',{
     method: 'POST',
     headers: {
@@ -28,7 +32,7 @@ function handleSubmit(event){
         console.log(e);
         })}
 
-console.log(values)
+console.log(sides)
 
 
 const handleName = (event) => {
@@ -40,6 +44,12 @@ const handleImage = (event) => {
 
 const handleDistance = (event) => {
     setValues({...values, distance:event.target.value})
+}
+const handlePowerLevel = (event) => {
+    setValues({...values, powerLevel:event.target.value})
+}
+const handleContents = (event) => {
+    setValues({...values, contents:event.target.value})
 }
 return(
     <div className="form-container">
@@ -68,6 +78,22 @@ return(
                 className="distance"
                 placeholder="Distance"
                 name="galaxyDistance"/>
+            </div>
+            <div>
+            <input 
+                onChange={handlePowerLevel}
+                value={values.powerLevel}
+                className="powerLevel"
+                placeholder="powerLevel"
+                name="galaxypowerLevel"/>
+            </div>
+            <div>
+            <input 
+                onChange={handleContents}
+                value={values.contents}
+                className="contents"
+                placeholder="contents"
+                name="galaxycontents"/>
             </div>
             <input type="submit"/>
         </form>

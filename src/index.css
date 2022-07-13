@@ -267,4 +267,10 @@ button {
 }
 
 
+/*scoreboard*/
 
+.scoreboard{
+   display:inline-block; width: 49%;
+  text-align: center;
+  margin: 200px 0 0 200px;
+}
