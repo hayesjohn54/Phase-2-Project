@@ -3,9 +3,7 @@ import GalaxyContainer from './GalaxyContainer';
 import React, {useEffect, useState} from 'react';
 import { Routes, Route } from "react-router-dom";
 import Home from './Home';
-import About from './About';
 import Form from './Form';
-import { func } from 'prop-types';
 
 function App(){
     const [galaxies, setGalaxies]= useState([])
@@ -38,7 +36,6 @@ function App(){
         <div>
             <NavBar />
                 <Routes>
-                    <Route path="/about" element={<About />}/>
                     <Route path="/galaxies" element={<GalaxyContainer galaxies={galaxies} />}/>
                     <Route path='/' element={<Home winLoseOrDraw={winLoseOrDraw} sides={sides} dealerObj={dealerObj} setDealerNumber={setDealerNumber} playerObj={playerObj} number={number} setNumber={setNumber} dealerPoints={dealerPoints} playerPoints={playerPoints} draws={draws}/>} />
                     <Route path="/form" element={<Form setGalaxies={setGalaxies} sides={sides} setSides={setSides}/>}/>

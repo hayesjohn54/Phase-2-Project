@@ -13,7 +13,7 @@ function PlayerCard({galaxy}){
           <div className="ard__content">
             <div className="ard__title">{galaxy.name}</div>
             <p className="ard__text">{galaxy.contents}</p>
-            <p>{galaxy.powerLevel}</p>
+            <p>Power Level:{galaxy.powerLevel}</p>
             <div className="ard__detail">
               <p>{galaxy.distance}</p>
             </div>
