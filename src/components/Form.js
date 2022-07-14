@@ -96,7 +96,7 @@ return(
                 placeholder="contents"
                 name="galaxycontents"/>
             </div>
-            <input type="submit"/>
+            <input className="submit" type="submit"/>
         </form>
         
     </div>

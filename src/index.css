@@ -277,3 +277,15 @@ margin: 10px 0 0 540px;
 background-color: #000;
 color: #fff;
 }
+
+input{
+  width : 250px;
+  padding: 10px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.submit{
+  background-color: #000;
+  color: #fff;
+}

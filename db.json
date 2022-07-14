@@ -47,14 +47,6 @@
       "distance": "Distance: 0.081 Million Light Years from Earth",
       "powerLevel": "2",
       "contents": "9 Global Clusters(large star clusters)"
-    },
-    {
-      "name": "GALACTICA",
-      "image": "https://www.nasa.gov/sites/default/files/thumbnails/image/hubble_ic342_mosaicnew_acscrop2_flat_cont4_finalcrop3.jpg",
-      "distance": "too far",
-      "contents": "lksjfdlkaf",
-      "powerLevel": "1001000",
-      "id": 7
     }
   ]
 }

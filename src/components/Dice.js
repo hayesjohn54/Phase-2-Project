@@ -13,21 +13,19 @@ function Dice({number, setNumber, setDealerNumber, sides, winLoseOrDraw}){
       }
       
       //Prints dice roll to the page
-
+    
       function roll() {
-        
-        
         let result = dice.roll();
         //printNumber(result);
         if(count>0){
-        winLoseOrDraw()
-        }
-        setCount(count+1)
+            winLoseOrDraw()
+            }
+            setCount(count+1)
         
         setNumber(result)
       };
 return(
-    <div id="dice">
+    <div id="dice" >
           <p id="placeholder">{number}
   
   </p>
